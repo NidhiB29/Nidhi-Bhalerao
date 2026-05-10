@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nidhi V. Bhalerao | Developer Portfolio</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: { sans: ['Inter', 'sans-serif'], mono: ['Fira Code', 'monospace'] },
+                    colors: { primary: '#00f2fe', secondary: '#4facfe', dark: '#0a0a0a' }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body { background-color: #050505; color: #f0f0f0; overflow-x: hidden; }
+        /* Particle Background Container */
+        #particles-js { position: fixed; width: 100%; height: 100%; top: 0; left: 0; z-index: -1; }
+        
+        /* Glassmorphism Classes */
+        .glass { background: rgba(255, 255, 255, 0.03); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.05); }
+        .glass-card { background: rgba(15, 15, 20, 0.6); backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.08); transition: transform 0.3s, border-color 0.3s; }
+        .glass-card:hover { transform: translateY(-5px); border-color: rgba(0, 242, 254, 0.5); box-shadow: 0 10px 30px rgba(0, 242, 254, 0.1); }
+        
+        /* Custom Gradient Text */
+        .text-gradient { background: linear-gradient(to right, #4facfe, #00f2fe); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+    </style>
+</head>
+<body class="font-sans antialiased">
+
+    <div id="particles-js"></div>
+
+    <header class="fixed w-full top-0 z-50 glass transition-all duration-300">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold font-mono text-gradient">&lt;Nidhi/&gt;</a>
+            <nav class="hidden md:flex space-x-8 text-sm font-semibold tracking-wide">
+                <a href="#home" class="hover:text-primary transition-colors">HOME</a>
+                <a href="#skills" class="hover:text-primary transition-colors">SKILLS</a>
+                <a href="#projects" class="hover:text-primary transition-colors">PROJECTS</a>
+                <a href="#contact" class="hover:text-primary transition-colors">CONTACT</a>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home" class="min-h-screen flex items-center justify-center px-6 pt-20">
+        <div class="max-w-4xl w-full text-center" data-aos="zoom-in" data-aos-duration="1000">
+            <p class="text-primary font-mono mb-4 text-lg tracking-widest">HELLO WORLD, I AM</p>
+            <h1 class="text-5xl md:text-7xl font-bold mb-6 tracking-tight">Nidhi Bhalerao.</h1>
+            <div class="text-xl md:text-3xl text-gray-400 mb-8 h-10 font-mono">
+                &gt; <span id="typed"></span>
+            </div>
+            <p class="text-gray-400 max-w-2xl mx-auto mb-10 text-lg leading-relaxed">
+                A passionate Computer Engineering student at SPPU. Specializing in Data Structures, Algorithms, and building robust digital solutions. Eager to bring my skills to a dynamic internship.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="#projects" class="px-8 py-3 rounded-full bg-gradient-to-r from-secondary to-primary text-black font-bold hover:scale-105 transition-transform shadow-[0_0_15px_rgba(0,242,254,0.4)]">
+                    View My Work
+                </a>
+                <a href="#contact" class="px-8 py-3 rounded-full border border-primary text-primary font-bold hover:bg-primary/10 transition-colors">
+                    Contact Me
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="py-24 px-6 relative">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl md:text-4xl font-bold mb-16 text-center" data-aos="fade-up">Technical <span class="text-gradient">Arsenal</span></h2>
+            
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6 text-center">
+                <div class="glass-card rounded-2xl p-6" data-aos="fade-up" data-aos-delay="100">
+                    <i class="fab fa-cuttlefish text-4xl text-primary mb-4"></i>
+                    <h3 class="font-semibold">C / C++</h3>
+                </div>
+                <div class="glass-card rounded-2xl p-6" data-aos="fade-up" data-aos-delay="200">
+                    <i class="fab fa-python text-4xl text-primary mb-4"></i>
+                    <h3 class="font-semibold">Python</h3>
+                </div>
+                <div class="glass-card rounded-2xl p-6" data-aos="fade-up" data-aos-delay="300">
+                    <i class="fab fa-js text-4xl text-primary mb-4"></i>
+                    <h3 class="font-semibold">JavaScript</h3>
+                </div>
+                <div class="glass-card rounded-2xl p-6" data-aos="fade-up" data-aos-delay="400">
+                    <i class="fab fa-html5 text-4xl text-primary mb-4"></i>
+                    <h3 class="font-semibold">HTML5</h3>
+                </div>
+                <div class="glass-card rounded-2xl p-6" data-aos="fade-up" data-aos-delay="500">
+                    <i class="fab fa-css3-alt text-4xl text-primary mb-4"></i>
+                    <h3 class="font-semibold">CSS3</h3>
+                </div>
+                <div class="glass-card rounded-2xl p-6" data-aos="fade-up" data-aos-delay="600">
+                    <i class="fas fa-sitemap text-4xl text-primary mb-4"></i>
+                    <h3 class="font-semibold">DSA</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="py-24 px-6">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl md:text-4xl font-bold mb-16 text-center" data-aos="fade-up">Featured <span class="text-gradient">Projects</span></h2>
+            
+            <div class="grid md:grid-cols-2 gap-10">
+                <div class="glass-card rounded-2xl p-8" data-aos="fade-right">
+                    <div class="flex justify-between items-center mb-6">
+                        <i class="fas fa-folder-open text-4xl text-primary"></i>
+                        <a href="https://github.com/NidhiB29" target="_blank" class="text-2xl hover:text-primary transition-colors"><i class="fab fa-github"></i></a>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3">Portfolio v3.0</h3>
+                    <p class="text-gray-400 mb-6 leading-relaxed">
+                        A modern, interactive developer portfolio built using Tailwind CSS, Particles.js, and AOS animations. Designed with a glassmorphism UI for a premium feel.
+                    </p>
+                    <div class="flex flex-wrap gap-2 font-mono text-xs text-primary">
+                        <span class="bg-primary/10 px-3 py-1 rounded-full">HTML/CSS</span>
+                        <span class="bg-primary/10 px-3 py-1 rounded-full">Tailwind CSS</span>
+                        <span class="bg-primary/10 px-3 py-1 rounded-full">JavaScript</span>
+                    </div>
+                </div>
+
+                <div class="glass-card rounded-2xl p-8" data-aos="fade-left">
+                    <div class="flex justify-between items-center mb-6">
+                        <i class="fas fa-terminal text-4xl text-primary"></i>
+                        <a href="https://github.com/NidhiB29" target="_blank" class="text-2xl hover:text-primary transition-colors"><i class="fab fa-github"></i></a>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3">Algorithmic Solutions Core</h3>
+                    <p class="text-gray-400 mb-6 leading-relaxed">
+                        A structured repository of advanced Data Structures and Algorithms solutions. Focuses on optimizing time and space complexity using highly efficient C++ code.
+                    </p>
+                    <div class="flex flex-wrap gap-2 font-mono text-xs text-primary">
+                        <span class="bg-primary/10 px-3 py-1 rounded-full">C++</span>
+                        <span class="bg-primary/10 px-3 py-1 rounded-full">Algorithms</span>
+                        <span class="bg-primary/10 px-3 py-1 rounded-full">DSA</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-24 px-6 text-center">
+        <div class="max-w-3xl mx-auto" data-aos="zoom-in">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6">Let's <span class="text-gradient">Connect</span></h2>
+            <p class="text-gray-400 mb-10 text-lg">
+                I'm actively looking for internship opportunities. Whether you have a question or just want to say hi, I'll try my best to get back to you!
+            </p>
+            
+            <a href="mailto:nidhibhalerao83g@gmail.com" class="inline-block px-8 py-4 border border-primary text-primary font-bold rounded-full hover:bg-primary hover:text-black transition-all duration-300 mb-12">
+                Say Hello <i class="fas fa-paper-plane ml-2"></i>
+            </a>
+
+            <div class="flex justify-center gap-8">
+                <a href="https://github.com/NidhiB29" target="_blank" class="text-3xl text-gray-400 hover:text-primary hover:-translate-y-2 transition-all"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/nidhi-b-96269b385" target="_blank" class="text-3xl text-gray-400 hover:text-primary hover:-translate-y-2 transition-all"><i class="fab fa-linkedin"></i></a>
+                <a href="tel:+919699020073" class="text-3xl text-gray-400 hover:text-primary hover:-translate-y-2 transition-all"><i class="fas fa-phone"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="text-center py-6 border-t border-white/10 text-gray-500 text-sm">
+        <p>&copy; 2026 Nidhi Vijay Bhalerao. Built with <i class="fas fa-heart text-primary mx-1"></i> & Modern Web Tech.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+        // Init AOS (Scroll Animations)
+        AOS.init({
+            duration: 800,
+            once: false,
+            offset: 100
+        });
+
+        // Init Typed.js
+        new Typed('#typed', {
+            strings: ['Computer Engineering Student.', 'Front-End Developer.', 'DSA & C++ Enthusiast.'],
+            typeSpeed: 50,
+            backSpeed: 30,
+            backDelay: 2000,
+            loop: true
+        });
+
+        // Init Particles.js
+        particlesJS('particles-js', {
+            "particles": {
+                "number": { "value": 80, "density": { "enable": true, "value_area": 800 } },
+                "color": { "value": "#00f2fe" },
+                "shape": { "type": "circle" },
+                "opacity": { "value": 0.3, "random": false },
+                "size": { "value": 3, "random": true },
+                "line_linked": { "enable": true, "distance": 150, "color": "#00f2fe", "opacity": 0.2, "width": 1 },
+                "move": { "enable": true, "speed": 2, "direction": "none", "random": false, "straight": false, "out_mode": "out", "bounce": false }
+            },
+            "interactivity": {
+                "detect_on": "canvas",
+                "events": {
+                    "onhover": { "enable": true, "mode": "grab" },
+                    "onclick": { "enable": true, "mode": "push" },
+                    "resize": true
+                },
+                "modes": {
+                    "grab": { "distance": 140, "line_linked": { "opacity": 0.8 } },
+                    "push": { "particles_nb": 4 }
+                }
+            },
+            "retina_detect": true
+        });
+    </script>
+</body>
+</html>
